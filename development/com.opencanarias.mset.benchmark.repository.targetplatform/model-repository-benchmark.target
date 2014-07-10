@@ -3,7 +3,6 @@
 <locations>
 <location path="${git_work_tree}/development/com.opencanarias.mset.benchmark.repository.targetplatform/couchbase" type="Directory"/>
 <location path="${git_work_tree}/development/com.opencanarias.mset.benchmark.repository.targetplatform/postgres" type="Directory"/>
-<location path="${git_work_tree}/development/com.opencanarias.mset.benchmark.repository.targetplatform/oracle" type="Directory"/>
 <location path="${git_work_tree}/development/com.opencanarias.mset.benchmark.repository.targetplatform/neo4j" type="Directory"/>
 <location path="${git_work_tree}/development/com.opencanarias.mset.benchmark.repository.targetplatform/pax-logging" type="Directory"/>
 <location includeAllPlatforms="true" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
