@@ -51,9 +51,9 @@ public class BenchmarkCommandProvider implements CommandProvider {
 			return null;
 		}
 		
-		if (argument1.equalsIgnoreCase(ARGUMENT_STOP)) {
+		if (ARGUMENT_STOP.equalsIgnoreCase(argument1)) {
 			BenchmarkManager.INSTANCE.stop();
-		} else if (argument1.equalsIgnoreCase(ARGUMENT_LIST)) {
+		} else if (ARGUMENT_LIST.equalsIgnoreCase(argument1)) {
 			interpreter.println("List of available IModelRepository instances");
 			for (String repoName : BenchmarkManager.INSTANCE.listRepositories()) {
 				interpreter.println(repoName);
@@ -66,7 +66,7 @@ public class BenchmarkCommandProvider implements CommandProvider {
 			if (iterations < 1) {
 				interpreter.println("Iteration must be a positive integer bigger than 1");
 			} else {
-				if (BenchmarkManager.INSTANCE.repositoryExists(argument1)) {
+				if (BenchmarkManager.INSTANCE.repositoryExists(argument1) || ARGUMENT_ALL.equalsIgnoreCase(argument1)) {
 					if (!benchmarkAsync(argument1, iterations)) {
 						interpreter.println("A benchmark is running, please wait until it finishes, of stop it using the \"stop\" argument");
 					};
