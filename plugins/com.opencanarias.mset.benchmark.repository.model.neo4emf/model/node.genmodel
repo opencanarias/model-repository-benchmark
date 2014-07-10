@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.opencanarias.mset.benchmark.repository.model.neo4emf/src"
+    modelPluginID="com.opencanarias.mset.benchmark.repository.model.neo4emf" templateDirectory="platform:/plugin/fr.inria.atlanmod.neo4emf.codegen/templates"
+    dynamicTemplates="true" modelName="Node" rootExtendsInterface="fr.inria.atlanmod.neo4emf.INeo4emfObject"
+    rootExtendsClass="fr.inria.atlanmod.neo4emf.impl.Neo4emfObject" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>node.ecore</foreignModel>
+  <modelPluginVariables>NEO4EMF=fr.inria.atlanmod.neo4emf</modelPluginVariables>
+  <templatePluginVariables>NEO4EMF_GENERATOR=fr.inria.atlanmod.neo4emf.codegen</templatePluginVariables>
+  <genPackages prefix="Node" basePackage="com.opencanarias.mset.benchmark.repository.model.neo4emf"
+      disposableProviderFactory="true" ecorePackage="node.ecore#/">
+    <genClasses ecoreClass="node.ecore#//Node">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference node.ecore#//Node/child"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute node.ecore#//Node/string"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute node.ecore#//Node/integer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute node.ecore#//Node/byteArray"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

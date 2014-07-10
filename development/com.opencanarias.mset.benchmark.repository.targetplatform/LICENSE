@@ -1,0 +1,51 @@
+Third Party Software License/Notices
+
+This document contains Third Party Software Notices and/or Additional Terms and Conditions 
+for licensed third party software components used by Open Canarias' Model Repository Benchmark Framework.
+
+EPL 1.0
+------------------
+
+Eclipse Platform / Eclipse projects      https://www.eclipse.org/legal/epl-v10.html    © Copyright Eclipse Foundation and others
+Logback Classic                          https://www.eclipse.org/legal/epl-v10.html    © Copyright QOS.ch
+Logback Core                             https://www.eclipse.org/legal/epl-v10.html    © Copyright QOS.ch
+                                         
+Apache LICENSE 2.0
+------------------
+Couchbase Client                         http://www.apache.org/licenses/LICENSE-2.0    © Copyright Couchbase, Inc.
+Apache Commons Codec (TM)                http://www.apache.org/licenses/LICENSE-2.0    © Copyright The Apache Software Foundation
+Google Gson                              http://www.apache.org/licenses/LICENSE-2.0    © Copyright The Apache Software Foundation
+Apache HttpComponents                    http://www.apache.org/licenses/LICENSE-2.0    © Copyright Google Inc.
+Jettison                                 http://www.apache.org/licenses/LICENSE-2.0    © Copyright Envoi Solutions LLC
+Metrics Core                             http://www.apache.org/licenses/LICENSE-2.0    © Copyright Coda Hale, Yammer Inc.
+netty                                    http://www.apache.org/licenses/LICENSE-2.0    © Copyright The Netty Project
+Google Guava                             http://www.apache.org/licenses/LICENSE-2.0    © Copyright Google Inc.
+Pax Logging                              http://www.apache.org/licenses/LICENSE-2.0    © Copyright OPS4J - Open Participation for Java
+Pax ConfigManager                        http://www.apache.org/licenses/LICENSE-2.0    © Copyright OPS4J - Open Participation for Java
+Apache Lucene                            http://www.apache.org/licenses/LICENSE-2.0    © Copyright The Apache Software Foundation
+
+LGPL 2.1
+------------------
+MariaDB Client Library                   http://opensource.org/licenses/lgpl-2.1.php   © Copyright Oracle CORP
+JBoss Common Core                        http://opensource.org/licenses/lgpl-2.1.php   © Copyright JBoss
+JBoss Logging SPI                        http://opensource.org/licenses/lgpl-2.1.php   © Copyright JBoss
+Logback Classic                          http://opensource.org/licenses/lgpl-2.1.php   © Copyright QOS.ch
+Logback Core                             http://opensource.org/licenses/lgpl-2.1.php   © Copyright QOS.ch
+                                         
+GPL 3
+------------------
+DB4O                                     http://www.gnu.org/copyleft/gpl.html          © Copyright Versant CORP
+Neo4j                                    GPLv3 / AGPL v3 / commercial                  © Copyright 2002-2014 Network Engine for Objects in Lund AB ("Neo Technology")
+
+MIT
+------------------
+spymemcached                             http://opensource.org/licenses/MIT            © Copyright Dustin Sallings & Couchbase, Inc
+
+BSD
+----------------
+PostgreSQL                               http://opensource.org/licenses/postgresql     © Copyright The PostgreSQL Global Development Group
+
+OTHERS
+------------------
+Oracle Client Library                    http://www.oracle.com/technetwork/licenses/distribution-license-152002.html © Copyright Oracle and/or its affiliates.
+javax.transaction                        Open Standard

@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model-Repository Benchmark Product
+Bundle-SymbolicName: com.opencanarias.mset.benchmark.repository.product;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Open Canarias
+Bundle-ActivationPolicy: lazy

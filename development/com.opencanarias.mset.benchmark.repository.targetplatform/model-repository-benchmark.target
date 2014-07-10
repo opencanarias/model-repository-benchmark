@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="Repository Benchmarking Framework Based on Kepler SR2" sequenceNumber="57">
+<locations>
+<location path="${git_work_tree}/development/com.opencanarias.mset.benchmark.repository.targetplatform/couchbase" type="Directory"/>
+<location path="${git_work_tree}/development/com.opencanarias.mset.benchmark.repository.targetplatform/postgres" type="Directory"/>
+<location path="${git_work_tree}/development/com.opencanarias.mset.benchmark.repository.targetplatform/oracle" type="Directory"/>
+<location path="${git_work_tree}/development/com.opencanarias.mset.benchmark.repository.targetplatform/neo4j" type="Directory"/>
+<location path="${git_work_tree}/development/com.opencanarias.mset.benchmark.repository.targetplatform/pax-logging" type="Directory"/>
+<location includeAllPlatforms="true" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.rcp.feature.group" version="4.3.2.v20140221-1700"/>
+<unit id="org.eclipse.net4j.sdk.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.emf.workspace.feature.group" version="1.7.0.201306111400"/>
+<unit id="org.eclipse.emf.cdo.sdk.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.equinox.compendium.sdk.feature.group" version="3.8.0.v20130813-1853"/>
+<unit id="org.eclipse.equinox.executable.feature.group" version="3.6.0.v20140117-1004"/>
+<unit id="org.eclipse.jdt.feature.group" version="3.9.2.v20140221-1700"/>
+<unit id="org.eclipse.emf.ecore.feature.group" version="2.9.2.v20131212-0545"/>
+<unit id="org.eclipse.platform.feature.group" version="4.3.2.v20140221-1852"/>
+<unit id="org.eclipse.emf.common.feature.group" version="2.9.2.v20131212-0545"/>
+<repository location="http://download.eclipse.org/releases/kepler/"/>
+</location>
+<location includeAllPlatforms="true" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.net4j.db.postgresql.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.db.mysql.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.emf.cdo.server.db4o.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.db.oracle.feature.group" version="1.0.1.v20140218-1709"/>
+<repository location="http://download.eclipse.org/modeling/emf/cdo/drops/R20140218-1655/"/>
+</location>
+<location includeAllPlatforms="true" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="fr.inria.atlanmod.neo4emf.feature.feature.group" version="0.1.0.201311210048"/>
+<repository location="http://neo4emf.com/updates/"/>
+</location>
+</locations>
+</target>

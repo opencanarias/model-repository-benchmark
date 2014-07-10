@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MemStore-based Model Repository contribution
+Bundle-SymbolicName: com.opencanarias.mset.benchmark.repository.cdo.mem;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Open Canarias
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.opencanarias.mset.benchmark.repository.cdo;bundle-version="[0.1.0,1.0.0)"
+Import-Package: org.slf4j
+Export-Package: com.opencanarias.mset.internal.benchmark.repository.cdo.mem;version="0.1.0";x-internal:=true
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/jvmMemRepositoryService.xml,
+ OSGI-INF/tcpMemRepositoryService.xml

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LissomeStore-based Model Repository contribution
+Bundle-SymbolicName: com.opencanarias.mset.benchmark.repository.cdo.lissome;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Open Canarias
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.opencanarias.mset.benchmark.repository.cdo;bundle-version="[0.1.0,1.0.0)",
+ org.eclipse.emf.cdo.server.lissome;bundle-version="[4.2.0,5.0.0)",
+ org.eclipse.net4j.db.h2;bundle-version="[4.2.0,5.0.0)"
+Bundle-ActivationPolicy: lazy
+Export-Package: com.opencanarias.mset.internal.benchmark.repository.cdo.lissome;version="0.1.0";x-internal:=true
+Service-Component: OSGI-INF/jvmLissomeRepositoryService.xml,
+ OSGI-INF/tcpLissomeRepositoryService.xml

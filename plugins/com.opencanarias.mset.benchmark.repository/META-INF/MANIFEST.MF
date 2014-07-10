@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model Repository Benchmark Framework
+Bundle-SymbolicName: com.opencanarias.mset.benchmark.repository;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Open Canarias
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.opencanarias.mset.benchmark.repository.model.node,
+ org.slf4j;version="1.7.0"
+Export-Package: com.opencanarias.mset.internal.repository.benchmark;version="0.1.0";x-internal:=true,
+ com.opencanarias.mset.repository.benchmark;version="0.1.0";uses:="org.eclipse.emf.ecore.resource,org.eclipse.emf.ecore,org.eclipse.emf.common.util"
+Require-Bundle: org.eclipse.emf.ecore;bundle-version="[2.9.0,3.0.0)";visibility:=reexport
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/benchmarkGroupRegistration.xml,
+ OSGI-INF/modelRepositoryRegistration.xml

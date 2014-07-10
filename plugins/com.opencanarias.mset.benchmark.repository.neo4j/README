@@ -1,0 +1,58 @@
+List of problems found to integrate neo4emf in the benchmarking framework
+
+----------------------------------------------------------------------------------------------------
+
+fr.inria.atlanmod.neo4emf.Neo4emfPlugin
+
+has UI-dependant code at:
+
+fr.inria.atlanmod.neo4emf.Neo4emfPlugin.logListener
+
+-------------------------------------------------------------------------------------------------------
+
+fr.inria.atlanmod.neo4emf.resourceUtil.Neo4emfResourceUtil
+
+uses org.eclipse.emf.codegen -> Depends on JDT and DEBUG. Overkill.
+
+Only needed for String formating for logging purposes
+
+public static String formatRelationshipName(EClass clsfier, EStructuralFeature str) {
+	return FormatClassifierName(clsfier) + "__" + CodeGenUtil.format(str.getName(), '_', null, false, false).toUpperCase();
+	
+}
+
+--------------------------------------------------------------------------------------------------------
+
+Extensive use of IStatus just for logging purposes
+
+--------------------------------------------------------------------------------------------------------
+
+Why a new type of EMF Resource needs XMI? 
+Neo4J depends on it depends on XMI just because of an Exception? 
+org.eclipse.emf.ecore.xmi.FeatureNotFoundException ????
+
+---------------------------------------------------------------------------------------------------------
+
+Neo4J is not very "OSGi friendly" and deploying it in the container is not trivial
+
+----------------------------------------------------------------------------------------------------------
+
+Neo4EMF Requires Java 1.7 (int casts...)
+Neo4J 1.9.7 in which 0.1.0 release is based does require 1.6
+Neo4J 2.x requires 1.7 
+
+----------------------------------------------------------------------------------------------------------
+
+EMF4Neo not compatible with latest Neo4J 2.1.0
+
+--------------------------------------------------------------------------------------------------------
+
+Release with compilation errors at GitHub?!
+
+------------------------------------------------------------------------------------------------------------
+
+Neo4J uses its own dependency injection mechanism. XML bindings included in:
+META-INF/services
+OSGi-INF
+
+are required, otherwise the embedded database will fail at initialization

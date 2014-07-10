@@ -1,0 +1,8 @@
+There are some limitations identified in MongoDBStore:
+
+- Since resources are committed into a single document, MongoDBStore does not allow big models.
+  MongoDB sets the document limitation to 16Mb. For anything bigger than that, the documentation recommends GirdFS.
+  Thats the reason 2 benchmark cases are skipped
+  
+- There is a bug on server restart: the implementation is unable to find the root resource. Therefore, any
+  benchmark case requiring restart would fail. Thats the reason for yet another benchmark case being skipped.

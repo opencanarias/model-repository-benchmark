@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Oracle-based DBStore Model Repository
+Bundle-SymbolicName: com.opencanarias.mset.benchmark.repository.cdo.db.oracle;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Open Canarias
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Import-Package: oracle.jdbc.driver,
+ oracle.jdbc.pool,
+ org.slf4j
+Require-Bundle: com.opencanarias.mset.benchmark.repository.cdo.db;bundle-version="[0.1.0,1.0.0)"
+Export-Package: com.opencanarias.mset.internal.benchmark.repository.cdo.db.oracle;version="0.1.0";x-internal:=true
+Service-Component: OSGI-INF/jvmOracleRepositoryService.xml,
+ OSGI-INF/tcpOracleRepositoryService.xml

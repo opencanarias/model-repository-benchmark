@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MariaDB-based DBStore Model Repository
+Bundle-SymbolicName: com.opencanarias.mset.benchmark.repository.cdo.db.mariadb;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Open Canarias
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Require-Bundle: com.opencanarias.mset.benchmark.repository.cdo.db;bundle-version="[0.1.0,1.0.0)"
+Export-Package: com.opencanarias.mset.benchmark.repository.cdo.db.mariadb;version="0.1.0";x-internal:=true
+Import-Package: org.mariadb.jdbc
+Service-Component: OSGI-INF/jvmMariaDBRepositoryService.xml,
+ OSGI-INF/tcpMariaDBRepositoryService.xml

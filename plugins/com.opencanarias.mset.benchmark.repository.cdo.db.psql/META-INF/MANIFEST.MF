@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PostgreSQL-based DBStore Model Repository
+Bundle-SymbolicName: com.opencanarias.mset.benchmark.repository.cdo.db.psql;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Open Canarias
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.opencanarias.mset.benchmark.repository.cdo.db;bundle-version="[0.1.0,1.0.0)"
+Import-Package: org.postgresql.ds,
+ org.postgresql.ds.common
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/jvmPostgresRepositoryService.xml,
+ OSGI-INF/tcpPostgresRepositoryService.xml

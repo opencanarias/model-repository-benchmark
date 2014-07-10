@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Repository Benchmark Tests
+Bundle-SymbolicName: com.opencanarias.mset.benchmark.repository.tests;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Open Canarias
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.opencanarias.mset.repository.benchmark,
+ org.junit,
+ org.slf4j
+Export-Package: com.opencanarias.mset.benchmark.repository.tests;version="0.1.0";x-internal:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.emf.ecore;bundle-version="[2.9.0,3.0.0)"

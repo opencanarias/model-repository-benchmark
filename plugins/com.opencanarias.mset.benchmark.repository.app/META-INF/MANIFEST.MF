@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Benchmarking OSGi Application
+Bundle-SymbolicName: com.opencanarias.mset.benchmark.repository.app;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Open Canarias
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.equinox.app;bundle-version="[1.3.0,2.0.0)",
+ com.opencanarias.mset.benchmark.repository
+Import-Package: org.eclipse.osgi.framework.console,
+ org.slf4j
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/commandProvider.xml
+Export-Package: com.opencanarias.mset.internal.benchmark.repository.app;version="0.1.0";x-internal:=true
