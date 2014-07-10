@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CDO Repository Backend Configuration Example
+Bundle-SymbolicName: com.opencanarias.mset.benchmark.repository.cdo.config.example
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Open Canarias
+Fragment-Host: com.opencanarias.mset.benchmark.repository.cdo;bundle-version="[0.1.0,1.0.0)"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
